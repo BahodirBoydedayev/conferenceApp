@@ -1,0 +1,207 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+.Aaction {
+    cursor: pointer;
+}
+
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.form-signin .form-signin-heading, .form-signin .checkbox {
+    margin-bottom: 10px;
+}
+
+.form-signin .checkbox {
+    font-weight: normal;
+}
+
+.form-signin .form-control {
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+
+.form-signin input[type="text"] {
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.account-wall {
+    margin-top: 20px;
+    padding: 40px 0px 20px 0px;
+    background-color: #f7f7f7;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.login-title {
+    color: #555;
+    font-size: 18px;
+    font-weight: 400;
+    display: block;
+}
+
+.profile-img {
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.need-help {
+    margin-top: 10px;
+}
+
+.new-account {
+    display: block;
+    margin-top: 10px;
+}
+
+.pager .previous button {
+    float: left;
+}
+
+.pager .next button {
+    float: right;
+}
+
+.navbar-top-links .dropdown-user {
+    right: 0;
+    left: auto;
+}
+
+.table-custom {
+    overflow-x: auto;
+    overflow-y: auto;
+    margin-top: 15px;
+}
+
+.tab-custom {
+    border: 1px solid #dddddd;
+    padding: 15px;
+}
+
+.pageSize {
+    margin-left: 15px;
+    width: 77px
+}
+
+.content-header {
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.text-height {
+    line-height: 35px
+}
+
+.tab-view {
+    border: 1px solid #ddd;
+    border-top: none;
+    padding: 5px;
+}
+
+.full button span {
+    background-color: limegreen;
+    border-radius: 32px;
+    color: black;
+}
+
+.partially button span {
+    background-color: orange;
+    border-radius: 32px;
+    color: black;
+}
+
+#section-content {
+    min-height: 604px
+}
+
+.ui-navbar {
+    background-color: darkslateblue;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1000;
+}
+
+#menu-navbar > li > a {
+    color: white;
+    cursor: pointer
+}
+
+.navbar-brand {
+    color: white;
+}
+
+.add-button {
+    line-height: 20px;
+    width: 100px
+}
+
+.add-div {
+    text-align: right;
+}
+
+#password {
+    margin-top: 5px;
+}
+
+form .ng-invalid.ng-touched {
+    border: 1px solid #DA3637;
+}
+
+form .ng-valid.ng-touched {
+    border: 1px solid #509D12;
+}
+
+.error {
+    color: red;
+}
+
+.dropdown :hover {
+    cursor: pointer;
+}
+
+
+.full button span {
+    background-color: limegreen;
+    border-radius: 32px;
+    color: black;
+}
+
+.partially button span {
+    background-color: orange;
+    border-radius: 32px;
+    color: black;
+}

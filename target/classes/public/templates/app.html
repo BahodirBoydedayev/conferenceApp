@@ -1,0 +1,47 @@
+<header>
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" ui-sref="app.users">Conference App</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                {{currentUser.role}}
+                <div ng-if="currentUser.roles.indexOf('ROLE_MASTER') !== -1">
+                    <ul class="nav navbar-nav">
+                        <li ui-sref-active="active"><a ui-sref="app.users"> Users</a></li>
+                    </ul>
+                </div>
+
+                <ul class="nav navbar-nav">
+                    <li ui-sref-active="active"><a ui-sref="app.conference"> Conference</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-ellipsis-horizontal"></i>
+                            <i class="glyphicon glyphicon-user"></i>
+                            <i class="caret"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li><a ui-sref="app.settings"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                            </li>
+                            <li><a ui-sref="app.settings"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a ng-click="logout()"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="container container-fluid tab-custom" ui-view></div>

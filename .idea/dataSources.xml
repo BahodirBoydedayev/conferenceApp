@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="15133976">
+    <data-source source="LOCAL" name="PostgreSQL - conferenceApp@localhost" uuid="5385dd49-cc6d-4063-a62e-f487b16b48b5">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/conferenceApp</jdbc-url>
+    </data-source>
+  </component>
+</project>

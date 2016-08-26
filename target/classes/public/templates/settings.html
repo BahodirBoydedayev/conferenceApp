@@ -1,0 +1,59 @@
+<ol class="breadcrumb">
+    <li><a href="#home" ng-bind="'home' | "></a></li>
+    <li class="active" ng-bind="'settings' | "></li>
+</ol>
+<div  class="container-fluid user-edit-class">
+    <div>
+        <div class="panel panel-primary">
+            <div class="panel-heading" style="padding-left: 500px" ng-bind="'settings' | "></div>
+            <div class="panel-body">
+                <div class="row-fluid clearfix"
+                     style="padding: 0px 250px 0px 300px">
+
+                    <div class="row-fluid clearfix">
+                        <div class="col-md-4">
+                            <b class="text-height" ng-bind="'login' | "></b>
+                        </div>
+                        <div class="col-md-8">
+                            <input type="text" name="username" ng-model="admin.login" value="{{admin.login}}"
+                                   class="form-control" ensure-unique-admin="username" required autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="row-fluid clearfix" style="padding-top: 5px">
+                        <div class="col-md-4">
+                            <b class="text-height" ng-bind="'current_password' | "></b>
+                        </div>
+                        <div class="col-md-8">
+                            <input type="password" ng-model="admin.currentPassword"
+                                   class="form-control" autocomplete="off">
+                        </div>
+                    </div>
+
+                    <div class="row-fluid clearfix" style="padding-top: 5px">
+                        <div class="col-md-4">
+                            <b class="text-height" ng-bind="'new_password' | "></b>
+                        </div>
+                        <div class="col-md-8">
+                            <input type="password" ng-model="admin.newPassword" class="form-control" autocomplete="off">
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="row-fluid clearfix" style="padding-top: 5px">
+                        <div class="col-md-6">
+                        </div>
+                        <div class="col-md-6">
+                            <a ng-click="changeUserSettings(admin)">
+                                <button class="btn btn-success" ng-bind="'save' | "></button>
+                            </a>
+                            <a href="#home">
+                                <button class="btn btn-primary" ng-bind="'cancel' | "></button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

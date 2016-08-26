@@ -1,0 +1,62 @@
+<div ng-init="initData()">
+    <div class="row-fluid clearfix content-header">
+        <div class="col-md-2">
+            <span class="text-height">User</span>
+        </div>
+        <div class="col-md-8">
+            <input type="text" ng-model="searchText" class="form-control"
+                   ng-change="changedInputText()">
+        </div>
+        <div class="col-md-2">
+            <div class="col-md-1">
+                <span class="text-height"> Size </span>
+            </div>
+            <div class="col-md-2">
+                <select ng-change="pageSizeChanged()" ng-model="pageSize"
+                        class="form-control pageSize">
+                    <option>10</option>
+                    <option>25</option>
+                    <option>50</option>
+                    <option>100</option>
+                </select>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="user" class="table-custom">
+        <table class="table table-bordered table-condensed table-striped tableTab">
+            <thead>
+            <th>#</th>
+            <th>Full Name</th>
+            <th>Login</th>
+            </thead>
+            <tbody>
+            <tr ng-repeat="user in users">
+                <td>{{(pageNumber - 1) * pageSize + $index + 1}}</td>
+                <td style="cursor: pointer; color: mediumblue">
+                    <a ng-click="userModal(user)" ng-bind="user.fullName"></a>
+                </td>
+                <td ng-bind="user.login"></td>
+            </tr>
+            </tbody>
+        </table>
+        <nav>
+            <ul class="pager">
+                <li class="previous">
+                    <button ng-disabled="pageNumber <= 1" class="btn btn-default"
+                            ng-click="pageNumber = pageNumber - 1; initData();"
+                            style="cursor: pointer"><span
+                            aria-hidden="true">&larr;</span> Previous
+                    </button>
+                </li>
+                <li class="next">
+                    <button style="cursor: pointer;" class="btn btn-default"
+                            ng-disabled="pageNumber * pageSize >= count;"
+                            ng-click="pageNumber = pageNumber + 1; initData();"> Next<span
+                            aria-hidden="true">&rarr;</span></button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
