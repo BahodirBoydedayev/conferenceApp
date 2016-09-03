@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="PostgreSQL - conferenceApp@localhost" uuid="5385dd49-cc6d-4063-a62e-f487b16b48b5">
+    <data-source name="PostgreSQL - conference@localhost" uuid="52a1f687-da92-4688-99d8-61c67add9786">
       <secret-storage>master_key</secret-storage>
       <user-name>postgres</user-name>
-      <schema-pattern>conferenceApp.pg_catalog conferenceApp.public</schema-pattern>
-      <default-schemas>conferenceApp.public</default-schemas>
+      <schema-pattern>conference.pg_catalog conference.public</schema-pattern>
+      <default-schemas>conference.public</default-schemas>
     </data-source>
   </component>
 </project>

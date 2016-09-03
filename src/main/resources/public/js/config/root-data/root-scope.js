@@ -1,7 +1,3 @@
-/**
- * Created by bakhodir on 7/18/16.
- */
-
 angular.module('myApp').run(function ($rootScope) {
     $rootScope.dt1 = new Date("yyyy-MM-dd HH:mm:ss");
     $rootScope.dt2 = new Date("yyyy-MM-dd HH:mm:ss");

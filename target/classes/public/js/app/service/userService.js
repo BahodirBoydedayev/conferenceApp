@@ -18,5 +18,8 @@ app.service('userService', function ($http) {
     };
     this.currentUser = function () {
         return $http.get('api/admin/users/currentUser');
+    };
+    this.save = function (user) {
+        return $http.post('auth/register', user);
     }
 });

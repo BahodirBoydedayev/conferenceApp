@@ -23,17 +23,17 @@ angular.module('myApp').controller('userCtrl', function ($scope, $http, $uibModa
         });
     };
 
-    $scope.deleteUser = function (user) {
-        var confirm = window.confirm("sure");
-        if (confirm) {
-            userService.delete(user.id).then(function () {
-                $scope.users = $scope.users.filter(function (data) {
-                    return data.id != user.id;
-                });
-            });
-            $scope.notify('success', "deleted...");
-        }
-    };
+    //$scope.deleteUser = function (user) {
+    //    var confirm = window.confirm("sure");
+    //    if (confirm) {
+    //        userService.delete(user.id).then(function () {
+    //            $scope.users = $scope.users.filter(function (data) {
+    //                return data.id != user.id;
+    //            });
+    //        });
+    //        $scope.notify('success', "deleted...");
+    //    }
+    //};
 
     $scope.pageSizeChanged = function () {
         $scope.pageNumber = 1;

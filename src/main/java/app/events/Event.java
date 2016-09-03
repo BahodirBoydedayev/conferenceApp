@@ -1,14 +1,16 @@
 package app.events;
 
 import app.core.BaseEntity;
+import app.location.Location;
+import app.users.User;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.util.Date;
+import java.util.List;
 
 
 @AllArgsConstructor
@@ -21,5 +23,10 @@ public class Event extends BaseEntity {
 
     @Column(name = "name")
     private String name;
+    @Column(name = "days")
+    private Date date;
 
+    @ManyToMany
+    @JoinTable(name = "app_events_location")
+    private List<Location> locations;
 }

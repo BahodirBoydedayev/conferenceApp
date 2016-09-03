@@ -13,7 +13,7 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 {{currentUser.role}}
-                <div ng-if="currentUser.roles.indexOf('ROLE_MASTER') !== -1">
+                <div ng-if="currentUser.roles.indexOf('MASTER') !== -1">
                     <ul class="nav navbar-nav">
                         <li ui-sref-active="active"><a ui-sref="app.users"> Users</a></li>
                     </ul>
@@ -31,8 +31,6 @@
                         </a>
                         <ul class="dropdown-menu dropdown-user">
                             <li><a ui-sref="app.settings"><i class="fa fa-user fa-fw"></i> User Profile</a>
-                            </li>
-                            <li><a ui-sref="app.settings"><i class="fa fa-gear fa-fw"></i> Settings</a>
                             </li>
                             <li class="divider"></li>
                             <li><a ng-click="logout()"><i class="fa fa-sign-out fa-fw"></i> Logout</a>

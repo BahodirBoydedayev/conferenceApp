@@ -1,6 +1,4 @@
-/**
- * Created by bakhodir on 7/21/16.
- */
+
 angular.module('myApp')
     .factory('authenticationService', function ($q, $http) {
         var service = {

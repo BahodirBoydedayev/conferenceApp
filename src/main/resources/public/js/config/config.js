@@ -11,7 +11,7 @@ var app = angular.module('myApp', ['ui.router', 'ui.bootstrap'])
         }
         $rootScope.$on('$stateChangeStart', function (event, toState, toParams, fromState, fromParams, options) {
             var token = window.localStorage.getItem('token');
-            if (token == null && toState.name !== 'login') {
+            if (token == null && toState.name !== 'login' && toState.name !== 'register') {
                 window.sessionStorage.setItem('previousPath', fromState);
                 event.preventDefault();
                 $state.go('login');
