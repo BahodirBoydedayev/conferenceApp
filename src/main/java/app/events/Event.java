@@ -26,7 +26,7 @@ public class Event extends BaseEntity {
     @Column(name = "days")
     private Date date;
 
-    @ManyToMany
-    @JoinTable(name = "app_events_location")
-    private List<Location> locations;
+    @ManyToOne
+    @JoinColumn(name = "location_id")
+    private Location location;
 }

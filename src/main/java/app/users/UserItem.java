@@ -11,4 +11,5 @@ public class UserItem {
     private String fullName;
     private String password;
     private String role;
+    private Long organization;
 }

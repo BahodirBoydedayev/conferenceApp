@@ -1,5 +1,5 @@
 
-angular.module('myApp').controller('eventCtrl', function ($scope, $http, $uibModal, $log, eventService) {
+app.controller('eventCtrl', function ($scope, $http, $uibModal, $log, eventService) {
 
     $scope.events = [];
     $scope.pageNumber = 1;

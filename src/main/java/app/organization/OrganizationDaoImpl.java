@@ -11,5 +11,4 @@ public class OrganizationDaoImpl extends BaseJpaDaoImpl<Organization, Long> impl
         super(Organization.class);
     }
 
-
 }

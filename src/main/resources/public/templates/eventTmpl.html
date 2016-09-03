@@ -1,7 +1,7 @@
 <div ng-init="initData()">
     <div class="row-fluid clearfix content-header">
         <div class="col-md-2">
-            <span class="text-height">User</span>
+            <span class="text-height">Events</span>
         </div>
         <div class="col-md-8">
             <input type="text" ng-model="searchText" class="form-control"
@@ -28,19 +28,17 @@
         <table class="table table-bordered table-condensed table-striped tableTab">
             <thead>
             <th>#</th>
-            <th>Full Name</th>
-            <th>Organization</th>
-            <th>Rank</th>
-            <th>Registration Date</th>
+            <th>Name</th>
+            <th>Location</th>
+            <th>Date</th>
             </thead>
             <tbody>
-            <tr ng-repeat="user in users">
+            <tr ng-repeat="event in events">
                 <td>{{(pageNumber - 1) * pageSize + $index + 1}}</td>
-                <td ng-bind="user.fullName">
+                <td ng-bind="event.name">
                 </td>
-                <td ng-bind="user.organization.name"></td>
-                <td ng-bind="user.roles[0]"></td>
-                <td ng-bind="user.regDate | date: 'medium'"></td>
+                <td ng-bind="event.location.name"></td>
+                <td ng-bind="event.date | date: 'medium'"></td>
             </tr>
             </tbody>
         </table>

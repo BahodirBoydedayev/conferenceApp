@@ -2,6 +2,8 @@ package app;
 
 
 import app.core.ROLE;
+import app.organization.Organization;
+import app.organization.OrganizationDao;
 import app.users.User;
 import app.users.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,12 +26,19 @@ public class StartUpTask {
     private static final String USER_USERNAME = "user";
     private static final String USER_LOGIN = "user";
     private static final String USER_PASSWORD = "10";
+    private static final String ORGANIZATION_NAME = "UNICON";
 
     private UserRepository userRepository;
+    private OrganizationDao organizationDao;
 
     @Autowired
     public void setUserRepository(UserRepository userRepository) {
         this.userRepository = userRepository;
+    }
+
+    @Autowired
+    public void setOrganizationDao(OrganizationDao organizationDao) {
+        this.organizationDao = organizationDao;
     }
 
     @PostConstruct
@@ -39,6 +48,11 @@ public class StartUpTask {
 
     public void initUsers() {
         if (userRepository.count() == 0) {
+
+            Organization organization = new Organization();
+            organizationDao.save(organization);
+
+            organization.setName(ORGANIZATION_NAME);
             User master = new User();
             User manager = new User();
             User user = new User();
@@ -54,6 +68,9 @@ public class StartUpTask {
             master.setRegDate(new Date());
             manager.setRegDate(new Date());
             user.setRegDate(new Date());
+            master.setOrganization(organization);
+            manager.setOrganization(organization);
+            user.setOrganization(organization);
 
             Set<ROLE> masterRoles = new HashSet<>();
             Set<ROLE> managerRoles = new HashSet<>();
