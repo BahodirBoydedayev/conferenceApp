@@ -18,8 +18,9 @@ angular.module('myApp').controller('userCtrl', function ($scope, $http, $uibModa
     $scope.initData = function () {
         userService.list($scope.searchText, $scope.pageSize, $scope.pageNumber).then(function (response) {
             $scope.users = response.data.users;
-            console.log(($scope.users));
             $scope.count = response.data.count;
+            console.log(($scope.users));
+            console.log($scope.count);
         });
     };
 

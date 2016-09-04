@@ -1,0 +1,79 @@
+<div class="container-fluid clearfix " id="loginPage">
+    <div class="row" style="padding-top: 75px;">
+        <div class="col-sm-6 col-md-4 col-md-offset-4">
+            <h1 class="text-center login-title">Register to Application</h1>
+
+            <div class="account-wall">
+                <form class="form-signin" name="signup_form">
+                    <input id="username" type="text" placeholder="User Name" ng-model="user.fullName" name="fullName"
+                           class="form-control" ng-maxlength="20" ng-minlength="3" ng-required="true"
+                           ng-focus autocomplete="off" style="margin-bottom: 5px"/>
+
+                    <div style="margin-bottom: 5px">
+                        <select class="form-control" ng-model="user.role">
+                            <option>MASTER</option>
+                            <option>MANAGER</option>
+                            <option>USER</option>
+                        </select>
+                    </div>
+
+                    <div style="margin-bottom: 5px">
+                        <select class="form-control" ng-model="user.organization"
+                                ng-options="item.id as item.name for item in organizations">
+                        </select>
+                    </div>
+
+                    <input id="login" type="text" placeholder="Login" ng-model="user.login" name="login"
+                           class="form-control" ng-maxlength="20" ng-minlength="3" ng-required="true"
+                           ng-focus autocomplete="off" style="margin-bottom: 5px"/>
+
+                    <div class="error"
+                         ng-show="signup_form.username.$invalid && signup_form.username.$touched && !signup_form.username.$focused">
+                        <p class="error" ng-show="signup_form.username.$error.required">
+                            Login Required
+                        </p>
+
+                        <p class="error"
+                           ng-show="signup_form.username.$error.minlength">
+                            User name cannot be length 3
+                        </p>
+
+                        <p class="error"
+                           ng-show="signup_form.username.$error.maxlength">
+                            Login cannot be longer than 20 characters
+                        </p>
+                    </div>
+
+                    <input id="password" type="password" placeholder="Password" ng-model="user.password" name="password"
+                           class="form-control" ng-minlength="0" ng-maxlength="100" ng-required="true"
+                           ng-focus autocomplete="off" style="margin-bottom: 5px"/>
+
+                    <div class="error"
+                         ng-show="signup_form.password.$invalid && signup_form.password.$touched && !signup_form.password.$focused;">
+                        <p class="error" ng-show="signup_form.password.$error.required">
+                            Password Required
+                        </p>
+
+                        <p class="error"
+                           ng-show="signup_form.password.$error.minlength">
+                            Password required to be at least 1 characters
+                        </p>
+
+                        <p class="error"
+                           ng-show="signup_form.password.$error.maxlength">
+                            Login cannot be longer than 100 characters
+                        </p>
+                    </div>
+                    <div>
+                        <button class="btn-lg btn-primary btn-block" type="submit"
+                                ng-disabled="(signup_form.username.$invalid )||
+                        (signup_form.password.$invalid)"
+                                ng-click="register()"> Register
+                        </button>
+                        <button class="btn-lg btn-danger btn-block" ui-sref="login">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

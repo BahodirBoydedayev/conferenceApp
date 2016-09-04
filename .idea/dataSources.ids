@@ -10,8 +10,8 @@
       <schema id="2" parent="1" name="public">
         <object-id>2200</object-id>
         <comment>standard public schema</comment>
-        <introspection-state-number>1448</introspection-state-number>
-        <introspection-timestamp>2016-09-04.00:33:08.961</introspection-timestamp>
+        <introspection-state-number>1676</introspection-state-number>
+        <introspection-timestamp>2016-09-04.01:24:51.107</introspection-timestamp>
       </schema>
       <schema id="3" parent="1" name="pg_catalog">
         <object-id>11</object-id>
@@ -20,80 +20,80 @@
         <introspection-timestamp>2016-09-01.16:52:17.921</introspection-timestamp>
       </schema>
       <sequence id="4" parent="2" name="app_events_id_seq">
-        <object-id>18879</object-id>
-        <state-number>1425</state-number>
+        <object-id>19447</object-id>
+        <state-number>1653</state-number>
       </sequence>
       <sequence id="5" parent="2" name="app_location_id_seq">
-        <object-id>18887</object-id>
-        <state-number>1426</state-number>
+        <object-id>19455</object-id>
+        <state-number>1654</state-number>
       </sequence>
       <sequence id="6" parent="2" name="app_organization_id_seq">
-        <object-id>18895</object-id>
-        <state-number>1427</state-number>
+        <object-id>19463</object-id>
+        <state-number>1655</state-number>
       </sequence>
       <sequence id="7" parent="2" name="app_program_id_seq">
-        <object-id>18903</object-id>
-        <state-number>1428</state-number>
+        <object-id>19471</object-id>
+        <state-number>1656</state-number>
       </sequence>
       <sequence id="8" parent="2" name="app_sessions_id_seq">
-        <object-id>18911</object-id>
-        <state-number>1429</state-number>
+        <object-id>19479</object-id>
+        <state-number>1657</state-number>
       </sequence>
       <sequence id="9" parent="2" name="app_sub_events_id_seq">
-        <object-id>18919</object-id>
-        <state-number>1430</state-number>
+        <object-id>19487</object-id>
+        <state-number>1658</state-number>
       </sequence>
       <sequence id="10" parent="2" name="app_track_id_seq">
-        <object-id>18930</object-id>
-        <state-number>1432</state-number>
+        <object-id>19498</object-id>
+        <state-number>1660</state-number>
       </sequence>
       <sequence id="11" parent="2" name="app_users_id_seq">
-        <object-id>18941</object-id>
-        <state-number>1434</state-number>
+        <object-id>19509</object-id>
+        <state-number>1662</state-number>
       </sequence>
       <table id="12" parent="2" name="app_events">
-        <object-id>18881</object-id>
-        <state-number>1441</state-number>
+        <object-id>19449</object-id>
+        <state-number>1669</state-number>
       </table>
       <table id="13" parent="2" name="app_location">
-        <object-id>18889</object-id>
-        <state-number>1437</state-number>
+        <object-id>19457</object-id>
+        <state-number>1665</state-number>
       </table>
       <table id="14" parent="2" name="app_organization">
-        <object-id>18897</object-id>
-        <state-number>1446</state-number>
+        <object-id>19465</object-id>
+        <state-number>1674</state-number>
       </table>
       <table id="15" parent="2" name="app_program">
-        <object-id>18905</object-id>
-        <state-number>1442</state-number>
+        <object-id>19473</object-id>
+        <state-number>1670</state-number>
       </table>
       <table id="16" parent="2" name="app_sessions">
-        <object-id>18913</object-id>
-        <state-number>1440</state-number>
+        <object-id>19481</object-id>
+        <state-number>1668</state-number>
       </table>
       <table id="17" parent="2" name="app_sub_events">
-        <object-id>18921</object-id>
-        <state-number>1444</state-number>
+        <object-id>19489</object-id>
+        <state-number>1672</state-number>
       </table>
       <table id="18" parent="2" name="app_sub_events_users">
-        <object-id>18927</object-id>
-        <state-number>1444</state-number>
+        <object-id>19495</object-id>
+        <state-number>1672</state-number>
       </table>
       <table id="19" parent="2" name="app_track">
-        <object-id>18932</object-id>
-        <state-number>1448</state-number>
+        <object-id>19500</object-id>
+        <state-number>1676</state-number>
       </table>
       <table id="20" parent="2" name="app_user_roles">
-        <object-id>18938</object-id>
-        <state-number>1445</state-number>
+        <object-id>19506</object-id>
+        <state-number>1673</state-number>
       </table>
       <table id="21" parent="2" name="app_users">
-        <object-id>18943</object-id>
-        <state-number>1447</state-number>
+        <object-id>19511</object-id>
+        <state-number>1675</state-number>
       </table>
       <table id="22" parent="2" name="app_users_events_track">
-        <object-id>18952</object-id>
-        <state-number>1448</state-number>
+        <object-id>19520</object-id>
+        <state-number>1676</state-number>
       </table>
       <table id="23" parent="3" name="pg_aggregate">
         <object-id>2600</object-id>
@@ -20800,25 +20800,25 @@
         <bind-function>bpchariclike|char,text</bind-function>
       </operator>
       <column id="3710" parent="12" name="id">
-        <state-number>1425</state-number>
+        <state-number>1653</state-number>
         <mandatory>1</mandatory>
         <data-type>bigint</data-type>
         <default-expression>nextval(&apos;app_events_id_seq&apos;::regclass)</default-expression>
       </column>
       <column id="3711" parent="12" name="days">
-        <state-number>1425</state-number>
+        <state-number>1653</state-number>
         <data-type>timestamp</data-type>
       </column>
       <column id="3712" parent="12" name="name">
-        <state-number>1425</state-number>
+        <state-number>1653</state-number>
         <data-type>varchar(255)</data-type>
       </column>
       <column id="3713" parent="12" name="location_id">
-        <state-number>1425</state-number>
+        <state-number>1653</state-number>
         <data-type>bigint</data-type>
       </column>
       <index id="3714" parent="12" name="app_events_pkey">
-        <object-id>18885</object-id>
+        <object-id>19453</object-id>
         <columns>id</columns>
         <unique>1</unique>
       </index>
@@ -20834,17 +20834,17 @@
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
       <column id="3717" parent="13" name="id">
-        <state-number>1426</state-number>
+        <state-number>1654</state-number>
         <mandatory>1</mandatory>
         <data-type>bigint</data-type>
         <default-expression>nextval(&apos;app_location_id_seq&apos;::regclass)</default-expression>
       </column>
       <column id="3718" parent="13" name="name">
-        <state-number>1426</state-number>
+        <state-number>1654</state-number>
         <data-type>varchar(255)</data-type>
       </column>
       <index id="3719" parent="13" name="app_location_pkey">
-        <object-id>18893</object-id>
+        <object-id>19461</object-id>
         <columns>id</columns>
         <unique>1</unique>
       </index>
@@ -20854,17 +20854,17 @@
         <primary>1</primary>
       </key>
       <column id="3721" parent="14" name="id">
-        <state-number>1427</state-number>
+        <state-number>1655</state-number>
         <mandatory>1</mandatory>
         <data-type>bigint</data-type>
         <default-expression>nextval(&apos;app_organization_id_seq&apos;::regclass)</default-expression>
       </column>
       <column id="3722" parent="14" name="name">
-        <state-number>1427</state-number>
+        <state-number>1655</state-number>
         <data-type>varchar(255)</data-type>
       </column>
       <index id="3723" parent="14" name="app_organization_pkey">
-        <object-id>18901</object-id>
+        <object-id>19469</object-id>
         <columns>id</columns>
         <unique>1</unique>
       </index>
@@ -20874,25 +20874,25 @@
         <primary>1</primary>
       </key>
       <column id="3725" parent="15" name="id">
-        <state-number>1428</state-number>
+        <state-number>1656</state-number>
         <mandatory>1</mandatory>
         <data-type>bigint</data-type>
         <default-expression>nextval(&apos;app_program_id_seq&apos;::regclass)</default-expression>
       </column>
       <column id="3726" parent="15" name="location_id">
-        <state-number>1428</state-number>
+        <state-number>1656</state-number>
         <data-type>bigint</data-type>
       </column>
       <column id="3727" parent="15" name="session_id">
-        <state-number>1428</state-number>
+        <state-number>1656</state-number>
         <data-type>bigint</data-type>
       </column>
       <column id="3728" parent="15" name="track_id">
-        <state-number>1428</state-number>
+        <state-number>1656</state-number>
         <data-type>bigint</data-type>
       </column>
       <index id="3729" parent="15" name="app_program_pkey">
-        <object-id>18909</object-id>
+        <object-id>19477</object-id>
         <columns>id</columns>
         <unique>1</unique>
       </index>
@@ -20920,21 +20920,21 @@
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
       <column id="3734" parent="16" name="id">
-        <state-number>1429</state-number>
+        <state-number>1657</state-number>
         <mandatory>1</mandatory>
         <data-type>bigint</data-type>
         <default-expression>nextval(&apos;app_sessions_id_seq&apos;::regclass)</default-expression>
       </column>
       <column id="3735" parent="16" name="paper">
-        <state-number>1429</state-number>
+        <state-number>1657</state-number>
         <data-type>varchar(255)</data-type>
       </column>
       <column id="3736" parent="16" name="app_speaker_id">
-        <state-number>1429</state-number>
+        <state-number>1657</state-number>
         <data-type>bigint</data-type>
       </column>
       <index id="3737" parent="16" name="app_sessions_pkey">
-        <object-id>18917</object-id>
+        <object-id>19485</object-id>
         <columns>id</columns>
         <unique>1</unique>
       </index>
@@ -20950,33 +20950,33 @@
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
       <column id="3740" parent="17" name="id">
-        <state-number>1430</state-number>
+        <state-number>1658</state-number>
         <mandatory>1</mandatory>
         <data-type>bigint</data-type>
         <default-expression>nextval(&apos;app_sub_events_id_seq&apos;::regclass)</default-expression>
       </column>
       <column id="3741" parent="17" name="day">
-        <state-number>1430</state-number>
+        <state-number>1658</state-number>
         <data-type>timestamp</data-type>
       </column>
       <column id="3742" parent="17" name="name">
-        <state-number>1430</state-number>
+        <state-number>1658</state-number>
         <data-type>varchar(255)</data-type>
       </column>
       <column id="3743" parent="17" name="type">
-        <state-number>1430</state-number>
+        <state-number>1658</state-number>
         <data-type>integer</data-type>
       </column>
       <column id="3744" parent="17" name="parent_id">
-        <state-number>1430</state-number>
+        <state-number>1658</state-number>
         <data-type>bigint</data-type>
       </column>
       <column id="3745" parent="17" name="program_id">
-        <state-number>1430</state-number>
+        <state-number>1658</state-number>
         <data-type>bigint</data-type>
       </column>
       <index id="3746" parent="17" name="app_sub_events_pkey">
-        <object-id>18925</object-id>
+        <object-id>19493</object-id>
         <columns>id</columns>
         <unique>1</unique>
       </index>
@@ -20998,12 +20998,12 @@
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
       <column id="3750" parent="18" name="sub_eventses_id">
-        <state-number>1431</state-number>
+        <state-number>1659</state-number>
         <mandatory>1</mandatory>
         <data-type>bigint</data-type>
       </column>
       <column id="3751" parent="18" name="users_id">
-        <state-number>1431</state-number>
+        <state-number>1659</state-number>
         <mandatory>1</mandatory>
         <data-type>bigint</data-type>
       </column>
@@ -21020,13 +21020,13 @@
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
       <column id="3754" parent="19" name="id">
-        <state-number>1432</state-number>
+        <state-number>1660</state-number>
         <mandatory>1</mandatory>
         <data-type>bigint</data-type>
         <default-expression>nextval(&apos;app_track_id_seq&apos;::regclass)</default-expression>
       </column>
       <index id="3755" parent="19" name="app_track_pkey">
-        <object-id>18936</object-id>
+        <object-id>19504</object-id>
         <columns>id</columns>
         <unique>1</unique>
       </index>
@@ -21036,12 +21036,12 @@
         <primary>1</primary>
       </key>
       <column id="3757" parent="20" name="user_id">
-        <state-number>1433</state-number>
+        <state-number>1661</state-number>
         <mandatory>1</mandatory>
         <data-type>bigint</data-type>
       </column>
       <column id="3758" parent="20" name="role">
-        <state-number>1433</state-number>
+        <state-number>1661</state-number>
         <data-type>varchar(32)</data-type>
       </column>
       <foreign-key id="3759" parent="20" name="fk_cwqyo4ok1vmnyvhjnb9lc6gla">
@@ -21051,38 +21051,38 @@
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
       <column id="3760" parent="21" name="id">
-        <state-number>1434</state-number>
+        <state-number>1662</state-number>
         <mandatory>1</mandatory>
         <data-type>bigint</data-type>
         <default-expression>nextval(&apos;app_users_id_seq&apos;::regclass)</default-expression>
       </column>
       <column id="3761" parent="21" name="full_name">
-        <state-number>1434</state-number>
+        <state-number>1662</state-number>
         <data-type>varchar(255)</data-type>
       </column>
       <column id="3762" parent="21" name="login">
-        <state-number>1434</state-number>
+        <state-number>1662</state-number>
         <mandatory>1</mandatory>
         <data-type>varchar(255)</data-type>
       </column>
       <column id="3763" parent="21" name="password">
-        <state-number>1434</state-number>
+        <state-number>1662</state-number>
         <data-type>varchar(255)</data-type>
       </column>
       <column id="3764" parent="21" name="reg_date">
-        <state-number>1434</state-number>
+        <state-number>1662</state-number>
         <data-type>timestamp</data-type>
       </column>
       <column id="3765" parent="21" name="status">
-        <state-number>1434</state-number>
+        <state-number>1662</state-number>
         <data-type>boolean</data-type>
       </column>
       <column id="3766" parent="21" name="organization_id">
-        <state-number>1434</state-number>
+        <state-number>1662</state-number>
         <data-type>bigint</data-type>
       </column>
       <index id="3767" parent="21" name="app_users_pkey">
-        <object-id>18950</object-id>
+        <object-id>19518</object-id>
         <columns>id</columns>
         <unique>1</unique>
       </index>
@@ -21098,12 +21098,12 @@
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
       <column id="3770" parent="22" name="tracks_id">
-        <state-number>1435</state-number>
+        <state-number>1663</state-number>
         <mandatory>1</mandatory>
         <data-type>bigint</data-type>
       </column>
       <column id="3771" parent="22" name="users_id">
-        <state-number>1435</state-number>
+        <state-number>1663</state-number>
         <mandatory>1</mandatory>
         <data-type>bigint</data-type>
       </column>

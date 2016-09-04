@@ -13,7 +13,7 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 {{currentUser.role}}
-                <div ng-if="currentUser.roles.indexOf('MASTER') !== -1">
+                <div>
                     <ul class="nav navbar-nav">
                         <li ui-sref-active="active"><a ui-sref="app.users"> Users</a></li>
                     </ul>

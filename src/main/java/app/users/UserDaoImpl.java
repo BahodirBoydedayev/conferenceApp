@@ -12,7 +12,7 @@ public class UserDaoImpl extends BaseJpaDaoImpl<User, Long> implements UserDao {
 
     @Override
     public Iterable<User> findAll(Long size, Long page, String text) {
-        return entityManager.createQuery("select e from User as e where e.login like :text order by e.id desc ", User.class).setParameter("text", "%" + text + "%")
+        return entityManager.createQuery("select e from User as e where e.fullName like :text order by e.id desc ", User.class).setParameter("text", "%" + text + "%")
                 .setFirstResult((page.intValue() - 1) * size.intValue()).setMaxResults(size.intValue()).getResultList();
 
     }

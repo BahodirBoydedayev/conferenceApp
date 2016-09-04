@@ -7,14 +7,14 @@ import org.springframework.web.bind.annotation.*;
 import java.security.Principal;
 
 @RestController
-@RequestMapping(value = "/api/admin/users")
+@RequestMapping(value = "/api/users")
 public class UserController {
 
     @Autowired
     private UserService userService;
 
     @RequestMapping(method = RequestMethod.GET)
-    public Object findAll(@RequestParam Long size, @RequestParam Long page, @RequestParam String text) {
+    public Object findAll(@RequestParam("size") Long size, @RequestParam("page") Long page, @RequestParam("text") String text) {
         return userService.findAll(size, page, text);
     }
 
@@ -22,7 +22,6 @@ public class UserController {
     public User save(@RequestBody User entity, CustomUserDetails userDetails) {
         return userService.save(entity, userDetails);
     }
-
 
     @RequestMapping(method = RequestMethod.GET, value = "/{id}")
     public Object findOneById(@PathVariable Long id) {

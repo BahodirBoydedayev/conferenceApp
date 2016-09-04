@@ -7,7 +7,7 @@ var app = angular.module('myApp', ['ui.router', 'ui.bootstrap'])
             $http.defaults.headers.common.Authorization = 'Basic ' + token;
         }
         else {
-            $location.path('/login');
+            $state.go('login');
         }
         $rootScope.$on('$stateChangeStart', function (event, toState, toParams, fromState, fromParams, options) {
             var token = window.localStorage.getItem('token');

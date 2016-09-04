@@ -1,23 +1,20 @@
 app.service('userService', function ($http) {
     this.list = function (text, size, page) {
-        return $http.get('api/admin/users', {
+        return $http.get('api/users', {
             params: {
-                text: text,
-                size: size,
-                page: page
+                text: text || '',
+                page: page || 0,
+                size: size || 10
             }
-        });
+        })
     };
 
     this.delete = function (id) {
-        return $http.delete('api/admin/users/' + id);
+        return $http.delete('api/users/' + id);
     };
 
-    this.edit = function (user) {
-        return $http.put('api/admin/users', user);
-    };
     this.currentUser = function () {
-        return $http.get('api/admin/users/currentUser');
+        return $http.get('api/users/currentUser');
     };
     this.save = function (user) {
         return $http.post('auth/register', user);

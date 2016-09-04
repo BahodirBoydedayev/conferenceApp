@@ -1,0 +1,75 @@
+<div class="container-fluid clearfix " id="loginPage">
+    <div class="row" style="padding-top: 75px;">
+        <div class="col-sm-6 col-md-4 col-md-offset-4">
+            <h1 class="text-center login-title">Sign to Conference App</h1>
+
+            <div class="account-wall">
+                <img class="profile-img" src="/images/user-image.jpg"
+                     alt="">
+
+                <form class="form-signin" name="signup_form">
+                    <input id="username" type="text" placeholder="Login" ng-model="user.username" name="username"
+                           class="form-control" ng-maxlength="20" ng-minlength="3" ng-required="true"
+                           ng-focus autocomplete="off"/>
+
+                    <div class="error"
+                         ng-show="signup_form.username.$invalid && signup_form.username.$touched && !signup_form.username.$focused">
+                        <p class="error" ng-show="signup_form.username.$error.required">
+                            Login Required
+                        </p>
+
+                        <p class="error"
+                           ng-show="signup_form.username.$error.minlength">
+                            User name cannot be length 3
+                        </p>
+
+                        <p class="error"
+                           ng-show="signup_form.username.$error.maxlength">
+                            Login cannot be longer than 20 characters
+                        </p>
+                    </div>
+
+                    <input id="password" type="password" placeholder="Password" ng-model="user.password" name="password"
+                           class="form-control" ng-minlength="0" ng-maxlength="100" ng-required="true"
+                           ng-focus autocomplete="off"/>
+
+                    <div class="error"
+                         ng-show="signup_form.password.$invalid && signup_form.password.$touched && !signup_form.password.$focused;">
+                        <p class="error" ng-show="signup_form.password.$error.required">
+                            Password Required
+                        </p>
+
+                        <p class="error"
+                           ng-show="signup_form.password.$error.minlength">
+                            Password required to be at least 1 characters
+                        </p>
+
+                        <p class="error"
+                           ng-show="signup_form.password.$error.maxlength">
+                            Login cannot be longer than 100 characters
+                        </p>
+                    </div>
+                    <button class="btn-lg btn-primary btn-block" type="submit"
+                            ng-disabled="(signup_form.username.$invalid )||
+                        (signup_form.password.$invalid)"
+                            ng-click="auth(user)"> Sign In
+                    </button>
+
+                    <div style="display: inline-block">
+                        <div>
+                            <label class="checkbox pull-left">
+                                <input type="checkbox" value="remember-me">
+                                <span>Remember me</span>
+                            </label>
+                        </div>
+                        <div>
+                            <label class="checkbox pull-left">
+                                <a style="cursor: pointer" ui-sref="register">Create a new account !</a>
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

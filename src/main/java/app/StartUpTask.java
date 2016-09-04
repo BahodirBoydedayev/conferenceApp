@@ -17,13 +17,13 @@ import java.util.Set;
 @Component
 public class StartUpTask {
 
-    private static final String MASTER_USER_USERNAME = "master";
+    private static final String MASTER_USER_USERNAME = "Master";
     private static final String MASTER_LOGIN = "master";
     private static final String MASTER_PASSWORD = "10";
-    private static final String MANAGER_USERNAME = "manager";
+    private static final String MANAGER_USERNAME = "Manager";
     private static final String MANAGER_LOGIN = "manager";
     private static final String MANAGER_PASSWORD = "10";
-    private static final String USER_USERNAME = "user";
+    private static final String USER_USERNAME = "User";
     private static final String USER_LOGIN = "user";
     private static final String USER_PASSWORD = "10";
     private static final String ORGANIZATION_NAME = "UNICON";
@@ -50,9 +50,8 @@ public class StartUpTask {
         if (userRepository.count() == 0) {
 
             Organization organization = new Organization();
-            organizationDao.save(organization);
-
             organization.setName(ORGANIZATION_NAME);
+
             User master = new User();
             User manager = new User();
             User user = new User();
@@ -83,6 +82,7 @@ public class StartUpTask {
             manager.setRoles(managerRoles);
             user.setRoles(userRoles);
 
+            organizationDao.save(organization);
             userRepository.save(master);
             userRepository.save(manager);
             userRepository.save(user);
