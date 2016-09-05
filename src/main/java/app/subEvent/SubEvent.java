@@ -31,6 +31,10 @@ public class SubEvent extends BaseEntity {
     @JoinColumn(name = "location_id")
     private Location location;
 
+    @ManyToOne
+    @JoinColumn(name = "owner_id")
+    private User user;
+
     @ManyToMany
     @JoinTable(name = "app_sub_events_users")
     private List<User> users;

@@ -10,14 +10,6 @@
                            ng-focus autocomplete="off" style="margin-bottom: 5px"/>
 
                     <div style="margin-bottom: 5px">
-                        <select class="form-control" ng-model="user.role">
-                            <option>MASTER</option>
-                            <option>MANAGER</option>
-                            <option>USER</option>
-                        </select>
-                    </div>
-
-                    <div style="margin-bottom: 5px">
                         <select class="form-control" ng-model="user.organization"
                                 ng-options="item.id as item.name for item in organizations">
                         </select>

@@ -2,54 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7edab346-f727-4a73-b3e1-2c7a65f887b0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/app/events/EventItem.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/app/location/LocationController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/app/location/LocationDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/app/location/LocationDaoImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/app/location/LocationService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/app/location/LocationServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/app/subEvent/SubEventController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/app/subEvent/SubEventDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/app/subEvent/SubEventDaoImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/app/subEvent/SubEventService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/app/subEvent/SubEventServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/public/js/app/controller/subEventCtrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/public/js/app/modal/addEventModalCtrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/public/js/app/service/subEventService.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/public/templates/modal/addEventModal.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/public/templates/subEventTmpl.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/app/program/Program.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/app/track/Track.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/public/js/config/route/route-config.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/app/subEvents/SubEvents.java" afterPath="$PROJECT_DIR$/src/main/java/app/subEvent/SubEvent.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/app/subEvents/Type.java" afterPath="$PROJECT_DIR$/src/main/java/app/subEvent/Type.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/public/js/config/route/route-config.js" afterPath="$PROJECT_DIR$/src/main/resources/public/js/config/route/route.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/app/StartUpTask.java" afterPath="$PROJECT_DIR$/src/main/java/app/StartUpTask.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/app/core/BaseEntity.java" afterPath="$PROJECT_DIR$/src/main/java/app/core/BaseEntity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/app/events/Event.java" afterPath="$PROJECT_DIR$/src/main/java/app/events/Event.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/app/events/EventController.java" afterPath="$PROJECT_DIR$/src/main/java/app/events/EventController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/app/events/EventServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/app/events/EventServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/app/location/Location.java" afterPath="$PROJECT_DIR$/src/main/java/app/location/Location.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/app/users/User.java" afterPath="$PROJECT_DIR$/src/main/java/app/users/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/css/style.css" afterPath="$PROJECT_DIR$/src/main/resources/public/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/index.html" afterPath="$PROJECT_DIR$/src/main/resources/public/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/js/app/controller/eventCtrl.js" afterPath="$PROJECT_DIR$/src/main/resources/public/js/app/controller/eventCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/js/app/service/eventService.js" afterPath="$PROJECT_DIR$/src/main/resources/public/js/app/service/eventService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/templates/app.html" afterPath="$PROJECT_DIR$/src/main/resources/public/templates/app.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/app/subEvent/SubEvent.java" afterPath="$PROJECT_DIR$/src/main/java/app/subEvent/SubEvent.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/templates/eventTmpl.html" afterPath="$PROJECT_DIR$/src/main/resources/public/templates/eventTmpl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/templates/login/register.html" afterPath="$PROJECT_DIR$/src/main/resources/public/templates/login/register.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/templates/userTmpl.html" afterPath="$PROJECT_DIR$/src/main/resources/public/templates/userTmpl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/application.properties" afterPath="$PROJECT_DIR$/target/classes/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/public/index.html" afterPath="$PROJECT_DIR$/target/classes/public/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/public/js/app/controller/eventCtrl.js" afterPath="$PROJECT_DIR$/target/classes/public/js/app/controller/eventCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/public/js/app/service/eventService.js" afterPath="$PROJECT_DIR$/target/classes/public/js/app/service/eventService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/public/templates/app.html" afterPath="$PROJECT_DIR$/target/classes/public/templates/app.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/public/templates/eventTmpl.html" afterPath="$PROJECT_DIR$/target/classes/public/templates/eventTmpl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/public/templates/userTmpl.html" afterPath="$PROJECT_DIR$/target/classes/public/templates/userTmpl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/public/css/style.css" afterPath="$PROJECT_DIR$/target/classes/public/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/public/templates/login/register.html" afterPath="$PROJECT_DIR$/target/classes/public/templates/login/register.html" />
     </list>
     <ignored path="ConferenceApp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -82,60 +43,6 @@
         <option name="myItemId" value="PostgreSQL - conference@localhost" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="public" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$GroupNode" />
-      </PATH_ELEMENT>
-    </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="PostgreSQL - conference@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="public" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$GroupNode" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="app_events" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="PostgreSQL - conference@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="public" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="PostgreSQL - conference@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
     </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
@@ -157,20 +64,31 @@
       <file leaf-file-name="eventTmpl.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/public/templates/eventTmpl.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.6666667">
-              <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
+            <state vertical-scroll-proportion="-10.666667">
+              <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
               <folding>
+                <element signature="n#style#0;n#a#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="subEventTmpl.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="StartUpTask.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/app/StartUpTask.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.42131978">
+              <caret line="50" column="38" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="subEventTmpl.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/public/templates/subEventTmpl.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.095744684">
-              <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+            <state vertical-scroll-proportion="-13.333333">
+              <caret line="47" column="21" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -180,30 +98,10 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/app/events/Event.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+              <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="addEventModalCtrl.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/public/js/app/modal/addEventModalCtrl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/app/users/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="46" column="47" selection-start-line="46" selection-start-column="47" selection-end-line="46" selection-end-column="47" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -212,7 +110,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/app/subEvent/SubEvent.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="30" column="37" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+              <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -264,7 +162,6 @@
         <option value="$PROJECT_DIR$/src/main/java/app/subEvents/SubEventController.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/subEvent/SubEventRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/security/AuthenticationService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/app/StartUpTask.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/users/User.java" />
         <option value="$PROJECT_DIR$/src/main/resources/public/templates/modal/eventAddModal.html" />
         <option value="$PROJECT_DIR$/src/main/resources/public/js/app/controller/eventAddModalCtrl.js" />
@@ -276,12 +173,10 @@
         <option value="$PROJECT_DIR$/src/main/java/app/location/Location.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/location/LocationServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/core/BaseEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/app/subEvent/SubEvent.java" />
         <option value="$PROJECT_DIR$/src/main/resources/public/js/app/service/eventService.js" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/app/location/LocationService.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/events/EventItem.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/public/templates/userTmpl.html" />
         <option value="$PROJECT_DIR$/src/main/resources/public/templates/modal/addEventModal.html" />
         <option value="$PROJECT_DIR$/src/main/java/app/events/EventService.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/events/EventController.java" />
@@ -298,10 +193,13 @@
         <option value="$PROJECT_DIR$/src/main/resources/public/templates/login/register.html" />
         <option value="$PROJECT_DIR$/src/main/resources/public/js/app/controller/subEventCtrl.js" />
         <option value="$PROJECT_DIR$/src/main/java/app/events/Event.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/public/templates/eventTmpl.html" />
         <option value="$PROJECT_DIR$/src/main/resources/public/js/app/modal/addEventModalCtrl.js" />
         <option value="$PROJECT_DIR$/src/main/resources/public/js/app/controller/eventCtrl.js" />
         <option value="$PROJECT_DIR$/src/main/resources/public/templates/subEventTmpl.html" />
+        <option value="$PROJECT_DIR$/src/main/java/app/subEvent/SubEvent.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/public/templates/userTmpl.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/public/templates/eventTmpl.html" />
+        <option value="$PROJECT_DIR$/src/main/java/app/StartUpTask.java" />
       </list>
     </option>
   </component>
@@ -1134,7 +1032,7 @@
       <workItem from="1472965452239" duration="14520000" />
       <workItem from="1473003388203" duration="15570000" />
       <workItem from="1473059518509" duration="4805000" />
-      <workItem from="1473082522899" duration="11408000" />
+      <workItem from="1473082522899" duration="14452000" />
     </task>
     <task id="LOCAL-00001" summary="...">
       <created>1472922273394</created>
@@ -1148,11 +1046,17 @@
       <option name="project" value="LOCAL" />
       <updated>1472931489751</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added sub event">
+      <created>1473096850823</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1473096850823</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97687000" />
+    <option name="totallyTimeSpent" value="100731000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1237,7 +1141,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="..." />
     <MESSAGE value="added event" />
-    <option name="LAST_COMMIT_MESSAGE" value="added event" />
+    <MESSAGE value="added sub event" />
+    <option name="LAST_COMMIT_MESSAGE" value="added sub event" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1263,13 +1168,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/subEvent/Type.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12182741">
-          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/public/js/app/service/userService.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.39593908">
@@ -1296,13 +1194,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21319798">
           <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/StartUpTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.54385966">
-          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1376,6 +1267,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.35897437">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1395,34 +1287,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/89640a95/52a1f687-da92-4688-99d8-61c67add9786/conference.public.app_user_roles">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-          <column-attributes>
-            <column name="ctid" enabled="false" />
-          </column-attributes>
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/app/events/EventItem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.36180905">
           <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/templates/userTmpl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43665767">
-          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -1479,19 +1347,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.296296">
           <caret line="25" column="78" selection-start-line="25" selection-start-column="78" selection-end-line="25" selection-end-column="78" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/89640a95/52a1f687-da92-4688-99d8-61c67add9786/conference.public.app_sub_events">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1560,19 +1415,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/89640a95/52a1f687-da92-4688-99d8-61c67add9786/conference.public.app_events">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/public/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.38297874">
@@ -1611,40 +1453,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/js/app/controller/subEventCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/subEvent/SubEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="37" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/users/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="46" column="47" selection-start-line="46" selection-start-column="47" selection-end-line="46" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/templates/eventTmpl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.6666667">
-          <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
-          <folding>
-            <element signature="n#style#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/app/users/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.27918783">
@@ -1661,14 +1469,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/js/app/modal/addEventModalCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/public/js/app/controller/eventCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1677,20 +1477,79 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/js/app/controller/subEventCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/users/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5431472">
+          <caret line="46" column="47" selection-start-line="46" selection-start-column="47" selection-end-line="46" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/templates/subEventTmpl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.333333">
+          <caret line="47" column="21" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/js/app/modal/addEventModalCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42639595">
+          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/subEvent/SubEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/templates/userTmpl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.55496454">
+          <caret line="40" column="44" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/app/events/Event.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+          <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/templates/subEventTmpl.html">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/templates/eventTmpl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.095744684">
-          <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+        <state vertical-scroll-proportion="-10.666667">
+          <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/StartUpTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42131978">
+          <caret line="50" column="38" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
           <folding />
         </state>
       </provider>
