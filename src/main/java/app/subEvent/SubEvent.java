@@ -1,9 +1,9 @@
-package app.subEvents;
+package app.subEvent;
 
 
 import app.core.BaseEntity;
 import app.events.Event;
-import app.program.Program;
+import app.location.Location;
 import app.users.User;
 import lombok.Getter;
 import lombok.Setter;
@@ -16,24 +16,24 @@ import java.util.List;
 @Setter
 @Entity
 @Table(name = "app_sub_events")
-public class SubEvents extends BaseEntity {
+public class SubEvent extends BaseEntity {
 
-    @Column(name = "name")
-    private String name;
     @Column(name = "day")
     private Date date;
+    @Column(name = "name")
+    private String name;
 
     @ManyToOne
     @JoinColumn(name = "parent_id")
     private Event event;
 
+    @ManyToOne
+    @JoinColumn(name = "location_id")
+    private Location location;
+
     @ManyToMany
     @JoinTable(name = "app_sub_events_users")
     private List<User> users;
-
-    @OneToOne
-    @JoinColumn(name = "program_id")
-    private Program program;
 
     @Column(name = "type")
     private Type type = Type.CONFERENCES;

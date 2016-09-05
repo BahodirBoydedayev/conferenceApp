@@ -4,8 +4,7 @@ import app.core.BaseEntity;
 import app.core.ROLE;
 import app.events.Event;
 import app.organization.Organization;
-import app.subEvents.SubEvents;
-import app.track.Track;
+import app.subEvent.SubEvent;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -40,10 +39,10 @@ public class User extends BaseEntity {
     private Organization organization;
 
     @ManyToMany(mappedBy = "users")
-    private List<SubEvents> subEventses;
+    private List<SubEvent> subEventses;
 
     @ManyToMany(mappedBy = "users")
-    private List<Track> tracks;
+    private List<Event> events;
 
     @ElementCollection(fetch = FetchType.EAGER)
     @CollectionTable(name = "app_user_roles", joinColumns = {

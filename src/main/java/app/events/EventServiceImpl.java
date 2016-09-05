@@ -1,6 +1,7 @@
 package app.events;
 
 
+import app.location.LocationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -12,10 +13,16 @@ import java.util.Map;
 public class EventServiceImpl implements EventService {
 
     private EventDao eventDao;
+    private LocationService locationService;
 
     @Autowired
     public void setEventDao(EventDao eventDao) {
         this.eventDao = eventDao;
+    }
+
+    @Autowired
+    public void setLocationService(LocationService locationService) {
+        this.locationService = locationService;
     }
 
     @Transactional(readOnly = true)
@@ -32,6 +39,7 @@ public class EventServiceImpl implements EventService {
     @Transactional
     @Override
     public Event save(Event entity) {
+        locationService.save(entity.getLocation());
         return eventDao.save(entity);
     }
 

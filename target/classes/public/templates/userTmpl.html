@@ -1,7 +1,10 @@
 <div ng-init="initData()">
+    <ol class="breadcrumb">
+        <li class="active">Users</li>
+    </ol>
     <div class="row-fluid clearfix content-header">
         <div class="col-md-2">
-            <span class="text-height">User</span>
+            <span class="text-height">Search</span>
         </div>
         <div class="col-md-8">
             <input type="text" ng-model="searchText" class="form-control"
@@ -14,10 +17,10 @@
             <div class="col-md-2">
                 <select ng-change="pageSizeChanged()" ng-model="pageSize"
                         class="form-control pageSize">
+                    <option>5</option>
                     <option>10</option>
                     <option>25</option>
                     <option>50</option>
-                    <option>100</option>
                 </select>
             </div>
 

@@ -1,0 +1,50 @@
+<div>
+    <div class="modal-header">
+        <h4 class="modal-title">Event </h4>
+    </div>
+    <div class="modal-body">
+        <div class="container-fluid">
+            <div class="container-fluid">
+                <div class="row-fluid clearfix">
+                    <div class="col-md-4">
+                        <span class="text-height">Name</span>
+                    </div>
+                    <div class="col-md-8">
+                        <input type="text" class="form-control" ng-model="event.name">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid" style="margin-top: 10px">
+            <div class="container-fluid">
+                <div class="row-fluid clearfix">
+                    <div class="col-md-4">
+                        <span class="text-height">Location</span>
+                    </div>
+                    <div class="col-md-8">
+                        <input type="text" class="form-control" ng-model="event.location.name">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid" style="margin-top: 10px">
+            <div class="container-fluid">
+                <div class="row-fluid clearfix">
+                    <div class="col-md-4">
+                        <span class="text-height">Date</span>
+                    </div>
+                    <div class="col-md-8">
+                        <input type="date" class="form-control" ng-model="event.date">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-warning" type="button" ng-click="cancel()"> Cancel</button>
+        <button class="btn btn-primary" type="button" ng-click="save()">Ok</button>
+    </div>
+</div>

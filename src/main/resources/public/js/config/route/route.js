@@ -35,6 +35,11 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             templateUrl: 'templates/eventTmpl.html',
             controller: 'eventCtrl'
         })
+        .state('app.subEvents', {
+            url: '/events/:eventId/subevent/',
+            templateUrl: 'templates/subEventTmpl.html',
+            controller: 'subEventCtrl'
+        })
         .state('app.error404', {
             url: '/error404',
             templateUrl: 'templates/error404.html'
@@ -48,4 +53,5 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             $location.path('/error404');
         }
     })
-});
+})
+;

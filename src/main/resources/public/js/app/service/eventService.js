@@ -17,7 +17,11 @@ app.service('eventService', function ($http) {
         return $http.put('api/events', user);
     };
 
-    this.save = function (user) {
-        return $http.post('api/events', user);
+    this.save = function (event) {
+        return $http.post('api/events', event);
+    };
+
+    this.findOne = function (id) {
+        return $http.get('api/events/' + id);
     }
 });

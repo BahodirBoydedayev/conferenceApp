@@ -7,6 +7,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.mapping.Set;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -26,7 +27,15 @@ public class Event extends BaseEntity {
     @Column(name = "days")
     private Date date;
 
+    @ManyToMany
+    @JoinTable(name = "app_events_users")
+    private List<User> users;
+
     @ManyToOne
-    @JoinColumn(name = "location_id")
+    @JoinColumn(name = "location_id", unique = true)
     private Location location;
+
+    @ManyToOne
+    @JoinColumn(name = "owner_id")
+    private User owner;
 }

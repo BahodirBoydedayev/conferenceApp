@@ -69,7 +69,6 @@ public class StartUpTask {
             user.setRegDate(new Date());
             master.setOrganization(organization);
             manager.setOrganization(organization);
-            user.setOrganization(organization);
 
             Set<ROLE> masterRoles = new HashSet<>();
             Set<ROLE> managerRoles = new HashSet<>();

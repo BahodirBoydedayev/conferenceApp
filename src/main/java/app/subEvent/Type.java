@@ -1,4 +1,4 @@
-package app.subEvents;
+package app.subEvent;
 
 
 public enum Type {
