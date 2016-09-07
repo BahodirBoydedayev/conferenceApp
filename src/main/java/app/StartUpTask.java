@@ -57,6 +57,7 @@ public class StartUpTask {
             user.setRoles(userRoles);
 
             organizationDao.save(organization);
+            user.setOrganization(organization);
             userRepository.save(user);
         }
     }

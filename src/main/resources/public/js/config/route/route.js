@@ -40,6 +40,11 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             templateUrl: 'templates/subEventTmpl.html',
             controller: 'subEventCtrl'
         })
+        .state('app.myEvents', {
+            url: '/events/myEvents/',
+            templateUrl: 'templates/eventTmpl.html',
+            controller: 'myEventCtrl'
+        })
         .state('app.error404', {
             url: '/error404',
             templateUrl: 'templates/error404.html'

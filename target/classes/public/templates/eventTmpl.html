@@ -23,10 +23,8 @@
                 </select>
             </div>
         </div>
-        <div ng-if="currentUser.roles.indexOf('MASTER') !== -1">
-            <div class="col-md-2 add-div">
-                <span class="btn btn-success add-button" ng-click="addEventModal()">Add</span>
-            </div>
+        <div class="col-md-2 add-div">
+            <span class="btn btn-success add-button" ng-click="addEventModal()">Add</span>
         </div>
     </div>
 
@@ -37,7 +35,8 @@
             <th>Name</th>
             <th>Location</th>
             <th>Date</th>
-            <th ng-if="currentUser.roles.indexOf('MASTER') !== -1">Action</th>
+            <th># Attendants</th>
+            <th>Action</th>
             </thead>
 
             <tbody>
@@ -49,9 +48,11 @@
                 </td>
                 <td ng-bind="event.location.name"></td>
                 <td ng-bind="event.date | date: 'medium'"></td>
-                <td style="cursor: pointer" ng-if="currentUser.roles.indexOf('MASTER') !== -1">
+                <td ng-bind="event.users.length"></td>
+                <td style="cursor: pointer" ng-if="currentUser.id == event.owner.id">
                     <span class="glyphicon glyphicon-edit" ng-click="addEventModal(event.id)"></span>
                 </td>
+                <td ng-if="currentUser.id != event.owner.id"></td>
             </tr>
             </tbody>
         </table>

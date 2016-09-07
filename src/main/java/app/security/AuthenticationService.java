@@ -44,16 +44,7 @@ public class AuthenticationService {
     public void register(@RequestBody UserItem userItem) {
         ROLE role = ROLE.USER;
         Set<ROLE> roles = new HashSet<>();
-        if (userItem.getRole() != null) {
-            if (userItem.getRole().contains("MASTER")) {
-                role = ROLE.MASTER;
-            } else if (userItem.getRole().contains("MANAGER")) {
-                role = ROLE.MANAGER;
-            } else if (userItem.getRole().contains("USER")) {
-                role = ROLE.USER;
-            }
-            roles.add(role);
-        }
+        roles.add(role);
         Organization organization = organizationDao.findOne(userItem.getOrganization());
         User user = new User(userItem.getLogin(), userItem.getPassword(), userItem.getFullName(), new Date(), true, organization, null, null, roles);
         userRepository.save(user);

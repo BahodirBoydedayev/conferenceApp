@@ -13,15 +13,22 @@ app.service('eventService', function ($http) {
         return $http.delete('api/events' + id);
     };
 
-    this.edit = function (user) {
-        return $http.put('api/events', user);
-    };
-
     this.save = function (event) {
         return $http.post('api/events', event);
     };
 
     this.findOne = function (id) {
         return $http.get('api/events/' + id);
+    };
+
+    this.findByOwnerId = function (text, size, page, id) {
+        return $http.get('api/events/findByOwnerId/' + id, {
+                params: {
+                    text: text,
+                    size: size,
+                    page: page
+                }
+            }
+        )
     }
 });

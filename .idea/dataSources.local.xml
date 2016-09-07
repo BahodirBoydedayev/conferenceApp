@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="PostgreSQL - conference@localhost" uuid="52a1f687-da92-4688-99d8-61c67add9786">
+    <data-source name="PostgreSQL - conference@localhost" uuid="1f765402-7354-499e-9134-7619c1ff0b6d">
       <secret-storage>master_key</secret-storage>
       <user-name>postgres</user-name>
       <schema-pattern>conference.pg_catalog conference.public</schema-pattern>

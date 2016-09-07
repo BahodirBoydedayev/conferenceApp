@@ -19,8 +19,6 @@ app.controller('eventCtrl', function ($scope, $http, currentUser, $uibModal, $lo
             console.log(response);
             $scope.events = response.data.events;
             $scope.count = response.data.count;
-            console.log($scope.count);
-            console.log($scope.events);
         });
     };
 

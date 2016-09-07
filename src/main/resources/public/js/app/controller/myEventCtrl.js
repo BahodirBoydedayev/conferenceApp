@@ -1,4 +1,4 @@
-app.controller('eventCtrl', function ($scope, $http, currentUser, $uibModal, $log, eventService) {
+app.controller('myEventCtrl', function ($scope, $http, currentUser, $uibModal, $log, eventService) {
 
     $scope.events = {};
     $scope.pageNumber = 1;
@@ -15,10 +15,11 @@ app.controller('eventCtrl', function ($scope, $http, currentUser, $uibModal, $lo
     }
 
     $scope.initData = function () {
-        eventService.list($scope.searchText, $scope.pageSize, $scope.pageNumber).then(function (response) {
-            console.log(response);
+        console.log(currentUser.data);
+        eventService.findByOwnerId($scope.searchText, $scope.pageSize, $scope.pageNumber, currentUser.data.id).then(function (response) {
             $scope.events = response.data.events;
             $scope.count = response.data.count;
+            console.log(response);
         });
     };
 
